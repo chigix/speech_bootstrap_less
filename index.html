@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>BootStrap | LESS</title>
+    
+    <meta name="description" content="" />
+    <meta name="author" content="Richard Lea" />
+    <link href="bower_components/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="bower_components/google-code-prettify/bin/prettify.min.css" rel="stylesheet" />
+    <style type="text/css">
+        .slide {
+            font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","微软雅黑",STXihei,"华文细黑",serif;
+        }
+        .prettyprint {
+            word-wrap: break-word;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>当前浏览器无法播放本幻灯片效果</p>
+    <p>建议使用 <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> 之类的浏览器来欣赏本演讲。 </p>
+</div>
+<div id="impress">
+    <div id="starter" class="step slide" data-x="-3000" data-y="-1500">
+        <q>跳坑！！</q>
+        <q style="margin-left:15%"><b>Bootstrap 3 构建 与 LESS</b></q>
+        <q style="margin-left:70%">李颖豪</q>
+    </div>
+
+    <div class="step slide" data-x="-2000" data-y="-1500">
+        <q><b>WHAT IS BOOTSTRAP 3</b></q>
+        <q>
+            <ul>
+                <li>* 9个<b>字母</b>的奇怪组合</li>
+                <li>* <b>Mobile First</b></li>
+                <li>* <b>Responsive</b> web</li>
+                <li>* Framework upon <b>LessCSS</b></li>
+            </ul>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="-1000" data-y="-1500">
+        <q><b>USERS</b></q>
+        <q>
+            <ul>
+                <li>* For Designers</li>
+                <li>* For Developers</li>
+            </ul>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q><b>For Designers</b></q>
+        <pre class="js-prettify-code prettyprint">
+<link rel="stylesheet" type="text/css" href="/path/to/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/path/to/theme.min.css">
+...
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3 nav"><ul>...</ul></div>
+        <div class="col-xs-8 article"><p>...</p></div>
+    </div>
+</div>
+        </pre>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+         <q><b>For Developers</b></q>
+         <q>
+            <ul>
+                <li>* <a href="http://getbootstrap.com/getting-started/#grunt">Building from LESS</a></li>
+                <li>* Local Building-->Modern Frontend Project</li>
+                <li>* Bower.io</li>
+            </ul>
+         </q>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <q><b>For Developers</b></q>
+        <pre class="js-prettify-code prettyprint">
+<link rel="stylesheet" type="text/css" 
+href="/path/to/breathtaking.min.css">
+...
+<div id="wrap">
+    <div class="row">
+        <aside><ul>...</ul></aside>
+        <article><p>...</p></article>
+    </div>
+</div>
+        </pre>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="-1500">
+        <q><b>LESS CSS:</b></q>
+        <pre class="js-prettify-code prettyprint">
+@import "/path/to/bootstrap.less"
+#wrap {
+    @aside-length: 3;
+    .container-fixed();
+    aside {
+        .make-xs-column(@aside-length);
+    }
+    article {
+        .make-xs-column(@grid-columns - @aside-length);
+    }
+}
+        </pre>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+        <q><b>Building Utilities</b></q>
+        <q>
+            <ul>
+                <li>* Grunt.js</li>
+                <li>* Gulp.js</li>
+                <li>* Packagist(PHP)--&gt;"codegyre/robo"</li>
+            </ul>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <q><b>Building Utilities(Others)</b></q>
+        <q>
+            <ul>
+                <li>* Autoprefixer</li>
+                <li>* Code Generator with Extension</li>
+            </ul>
+        </q>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="-1500">
+        <img src="images/workflow.png">
+    </div>
+
+    <div class="step slide" data-x="7000" data-y="-1500">
+        <q><b>LessCSS For Developers</b></q>
+        <q>
+            <ul>
+                <li>* MIXINS</li>
+                <li>* VAR</li>
+                <li>* IMPORT</li>
+            </ul>
+        </q>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+        <h1>FAQ</h1>
+    </div>
+
+</div>
+
+<script src="bower_components/impress.js/js/impress.js"></script>
+<script src="bower_components/google-code-prettify/bin/prettify.min.js"></script>
+<script src="bower_components/google-code-prettify/bin/run_prettify.min.js"></script>
+<script>
+impress().init();
+(function () {
+  function html(s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  var quineHtml = html(
+        '<!DOCTYPE html>\n<html>\n'
+      + document.documentElement.innerHTML 
+      + '\n<\/html>\n');
+
+  // Highlight the operative parts:
+  quineHtml = quineHtml.replace(
+    /&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+    '<span class="operative">$&</span>');
+
+  //document.getElementById("quine").innerHTML = quineHtml;
+  var prettifies = document.getElementsByClassName("js-prettify-code");
+  for (var i = prettifies.length - 1; i >= 0; i--) {
+      var e = prettifies[i];
+      var quineHtml = html(e.innerHTML);
+      e.innerHTML = quineHtml.replace(/&lt;script src[\s\S]*?&gt;&lt;\/script&gt;|&lt;!--\?[\s\S]*?--&gt;|&lt;pre\b[\s\S]*?&lt;\/pre&gt;/g,
+    '<span class="operative">$&</span>');
+      console.log(e.innerHTML);
+  };
+})();
+</script>
+
+</body>
+</html>

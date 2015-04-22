@@ -1,0 +1,20 @@
+{
+  "name": "speech_bootstrap_less",
+  "version": "0.0.0",
+  "homepage": "https://github.com/chigix/speech_bootstrap_less",
+  "authors": [
+    "Richard Lea <chigix@zoho.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "impress.js": "~0.5.3",
+    "google-code-prettify": "~1.0.4"
+  }
+}
