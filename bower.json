@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "impress.js": "~0.5.3",
-    "google-code-prettify": "~1.0.4"
+    "google-code-prettify": "~1.0.4",
+    "bootstrap": "~3.3.4"
   }
 }

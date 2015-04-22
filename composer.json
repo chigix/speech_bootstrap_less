@@ -1,0 +1,14 @@
+{
+    "name": "chigix/speech_bootstrap_less",
+    "description": "BANKAI",
+    "require-dev": {
+        "chigix/chiji": "~1.0",
+        "codegyre/robo": "*"
+    },
+    "authors": [
+        {
+            "name": "Richard Lea",
+            "email": "chigix@zoho.com"
+        }
+    ]
+}
