@@ -9,21 +9,21 @@
     "packages-dev": [
         {
             "name": "chigix/chiji",
-            "version": "1.0.3",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chigix/chiji-frontend.git",
-                "reference": "a84d1a2865a436365843381342e71685265c6b4d"
+                "reference": "5407f98c21ee99f8bbef43c97a231c0f81ed3e74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chigix/chiji-frontend/zipball/a84d1a2865a436365843381342e71685265c6b4d",
-                "reference": "a84d1a2865a436365843381342e71685265c6b4d",
+                "url": "https://api.github.com/repos/chigix/chiji-frontend/zipball/5407f98c21ee99f8bbef43c97a231c0f81ed3e74",
+                "reference": "5407f98c21ee99f8bbef43c97a231c0f81ed3e74",
                 "shasum": ""
             },
             "require": {
                 "chigix/io-component": "~0.1.1",
-                "codegyre/robo": "0.4.5",
+                "codegyre/robo": "*@stable",
                 "oyejorge/less.php": "~1.5",
                 "php": ">=5.4",
                 "symfony/console": "2.*"
@@ -54,7 +54,7 @@
                 "asset",
                 "front-end"
             ],
-            "time": "2015-04-13 02:39:42"
+            "time": "2015-04-23 06:20:17"
         },
         {
             "name": "chigix/io-component",
@@ -104,30 +104,32 @@
         },
         {
             "name": "codegyre/robo",
-            "version": "0.4.5",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codegyre/Robo.git",
-                "reference": "12518fe1565c777ab85c676979636bc43406db2f"
+                "reference": "a98a14a7d2284776c2038480b59edc142c80a01f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/12518fe1565c777ab85c676979636bc43406db2f",
-                "reference": "12518fe1565c777ab85c676979636bc43406db2f",
+                "url": "https://api.github.com/repos/Codegyre/Robo/zipball/a98a14a7d2284776c2038480b59edc142c80a01f",
+                "reference": "a98a14a7d2284776c2038480b59edc142c80a01f",
                 "shasum": ""
             },
             "require": {
                 "henrikbjorn/lurker": "1.0.*@dev",
                 "php": ">=5.4.0",
-                "symfony/console": "*",
-                "symfony/filesystem": "*",
-                "symfony/finder": "*",
-                "symfony/process": "*"
+                "symfony/console": "~2.5",
+                "symfony/filesystem": "~2.5",
+                "symfony/finder": "~2.5",
+                "symfony/process": "~2.5"
             },
             "require-dev": {
-                "codeception/aspect-mock": "*",
-                "codeception/codeception": "@dev",
-                "codeception/verify": "*"
+                "codeception/aspect-mock": "0.5.*",
+                "codeception/codeception": "~2.0",
+                "codeception/verify": "0.2.*",
+                "natxet/cssmin": "~3.0",
+                "patchwork/jsqueeze": "~1.0"
             },
             "bin": [
                 "robo"
@@ -149,7 +151,7 @@
                 }
             ],
             "description": "Modern task runner",
-            "time": "2014-08-05 04:07:15"
+            "time": "2015-02-24 01:42:23"
         },
         {
             "name": "henrikbjorn/lurker",
