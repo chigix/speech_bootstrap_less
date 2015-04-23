@@ -12,4 +12,4 @@
 
 * Building Demo Project
 
-       robo <>
+        robo chiji:build
