@@ -1,0 +1,17 @@
+@import "../../../bower_components/bootstrap/less/bootstrap.less";
+
+#wrap {
+    @aside-length: 3;
+    .container-fixed();
+    aside {
+        .make-xs-column(@aside-length);
+        background-color: yellow;
+        div {
+             float: left;
+             background-color: white;
+        }
+    }
+    article {
+        .make-xs-column(@grid-columns - @aside-length);
+    }
+}
